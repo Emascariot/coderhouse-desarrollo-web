@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emanuel</title>
+    <title>Preguntas frecuentes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
 
@@ -11,18 +15,35 @@
     <h1>Mi primera página web</h1>
 
     <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/pages/sobremi.html">Sobre mí</a>
-        <a href="/pages/proyectos.html">Proyectos</a>
-        <a href="/pages/faq.html">FAQ</a>
-        <a href="/pages/contacto.html">Contacto</a>
+        <ul class="navegacion">
+            <li>
+            <a href="/index.html">Inicio</a>
+            </li>
+            <li>
+            <a href="/pages/sobremi.html">Sobre mí</a>
+            </li>
+            <li>
+            <a href="/pages/proyectos.html">Proyectos</a>
+            </li>
+            <li>
+            <a href="/pages/faq.html">FAQ</a>
+            </li>
+            <li>
+            <a href="/pages/contacto.html">Contacto</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
 <main>
     <section>
+        <figure>
+            <figcaption>
+                <img class="preguntas" src="/imagenes/Signo-pregunta.jfif" alt="Maletin">
+            </figcaption>
+        </figure>
         <h2>
-            preguntas frecuentes
+            Preguntas frecuentes
         </h2>
         <article>
             <h3>¿El golf no es un deporte de viejo? </h3>
@@ -33,12 +54,24 @@
             <p>Si, se puede llegar a ganar plata</p>
         </article>
     </section>
+
 </main>
 
 <footer>
-    <br>
-    <br>
-    Presentado por Emanuel
+    <p>Presentado por Emanuel</p>
+    <p class="numeros">2026</p>
+    <ul class="redes-sociales">
+        <li>
+            <a href="https://instagram.com">
+                <img src="/imagenes/instagram.png" alt="instagram">
+            </a>
+        </li>
+        <li>
+            <a href="https://facebook.com">
+                <img src="/imagenes/facebook.png" alt="facebook">
+            </a>
+        </li>
+    </ul>
 </footer>
 
 </body>

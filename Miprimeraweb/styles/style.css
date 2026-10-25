@@ -1,0 +1,118 @@
+
+/* ===== ESTILOS GENERALES ===== */
+
+body {
+    background-color: #F4F6F5;
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ===== ESTILOS DE LISTAS ===== */
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+}
+
+
+/* ===== TÍTULOS H1 Y H2 ===== */
+
+h1 {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #264653;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+/* ===== TEXTOS ===== */
+
+p{
+    font-size: 1rem;
+}
+
+
+/* ===== MENÚ DE NAVEGACIÓN ===== */
+
+nav a {
+    color: #2A6F4E;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1B4332;
+    text-decoration: underline;
+}
+
+ul.navegacion {
+    overflow: hidden;
+}
+
+ul.navegacion li {
+    float: left;
+    padding-right: 10px;
+}
+
+
+/* ===== IMAGEN PRINCIPAL ===== */
+
+img.principal {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+/* ===== REDES SOCIALES ===== */
+
+ul.redes-sociales li img {
+    height: 30px;
+    width: auto;
+}
+
+
+/* ===== PIE DE PÁGINA (FOOTER) ===== */
+
+footer {
+    background-color: #1F3433;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== IMAGENES ===== */
+
+img.proyectos{
+    height: 150px;
+    width: auto;
+}
+
+img.preguntas{
+    height: 100px;
+    width: auto;
+}
+
+img.contacto{
+    height: 100px;
+    width: auto;
+}
+
+
+
