@@ -1,4 +1,7 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 /* ===== ESTILOS GENERALES ===== */
 
 body {
@@ -14,20 +17,46 @@ main {
     margin: 0 auto;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;     
+    padding: 15px 30px;
+}
+
 
 /* ===== ESTILOS DE LISTAS ===== */
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0;
+    align-items: center;
 }
 
 
 /* ===== TÍTULOS H1 Y H2 ===== */
+
+.texto-general{
+    margin: 20px;
+}
+
+.texto-general-angosto{
+    margin: 10px;
+}
+
+.texto-general-bottom{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.titulo {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
 
 h1 {
     font-weight: bold;
@@ -61,13 +90,13 @@ nav a:hover {
 }
 
 ul.navegacion {
-    overflow: hidden;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-ul.navegacion li {
-    float: left;
-    padding-right: 10px;
-}
 
 
 /* ===== IMAGEN PRINCIPAL ===== */
@@ -79,6 +108,10 @@ img.principal {
     margin: 20px auto;
 }
 
+.foto-personal{
+    margin: 30px;
+}
+
 
 /* ===== REDES SOCIALES ===== */
 
@@ -86,6 +119,7 @@ ul.redes-sociales li img {
     height: 30px;
     width: auto;
 }
+
 
 
 /* ===== PIE DE PÁGINA (FOOTER) ===== */
@@ -96,12 +130,16 @@ footer {
     padding: 20px;
     text-align: center;
 }
+.texto-footer{
+    margin: 20px;
+}
 
 /* ===== IMAGENES ===== */
 
 img.proyectos{
     height: 150px;
     width: auto;
+    margin: 10px;
 }
 
 img.preguntas{
@@ -113,6 +151,12 @@ img.contacto{
     height: 100px;
     width: auto;
 }
+img.logo{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
 
 
 
