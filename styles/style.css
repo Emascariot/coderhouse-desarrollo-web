@@ -258,6 +258,27 @@ header {
     }
 
 }
+/* Personalización con Custom Properties */
+        :root {
+            --primary-custom: #6A1B9A; /* Un morado elegante */
+            --primary-hover: #4A148C;
+        }
+
+        .navbar {
+            /* Sobreescribimos la variable de Bootstrap para el fondo de la nav */
+            --bs-navbar-bg: var(--primary-custom);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-link:hover {
+            opacity: 0.5;
+        }
+
+        /* Personalización del acordeón */
+        .accordion-button:not(.collapsed) {
+            background-color: #f3e5f5;
+            color: var(--primary-custom);
+        }
 
 
 
