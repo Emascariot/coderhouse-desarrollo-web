@@ -50,11 +50,51 @@
     <h1 class="titulo">Mi primera página web</h1>
     
     <section class="contenedor-proyectos">
-        <figure class="imagen-proyectos">
-            <a href="index.html">
-                <img class="principal" src="./imagenes/golf.jfif"alt="Jugador de golf en un campo soleado">
-            </a>
-        </figure>
+        <!-- CARRUSEL DE BOOTSTRAP -->
+        <div id="carruselPrincipal" class="carousel slide"
+            data-bs-autoplay="true"
+            data-bs-interval="3000">
+
+            <!-- IMÁGENES -->
+            <div class="carousel-inner">
+            
+                <!-- IMAGEN ORIGINAL -->
+                <div class="carousel-item active">
+                    <img src="./imagenes/golf.jfif" class="d-block w-100" alt="Golf">
+                </div>
+            
+                <!-- SEGUNDA IMAGEN -->
+                <div class="carousel-item">
+                    <img src="./imagenes/carrusell1.jpg" class="d-block w-100" alt="Golf 2">
+                </div>
+            
+                <!-- TERCERA IMAGEN -->
+                <div class="carousel-item">
+                    <img src="./imagenes/carrusell2.jpg" class="d-block w-100" alt="Golf 3">
+                </div>
+            
+            </div>
+
+            <!-- CONTROLES -->
+            <div class="d-flex justify-content-center gap-3 mt-2">
+            
+                <button class="btn-icon btn-sm" type="button"
+                    data-bs-target="#carruselPrincipal"
+                    data-bs-slide="prev">
+            
+                    <span class="carousel-icon-prev"></span>
+                </button>
+            
+                <button class="btn-icon btn-sm" type="button"
+                    data-bs-target="#carruselPrincipal"
+                    data-bs-slide="next">
+            
+                    <span class="carousel-icon-next"></span>
+                </button>
+            
+            </div>
+        
+        </div>
         <article class="proyecto-uno">
             <h2 class="texto-general">Elaborando mi primer proyecto</h2>
             <p class="texto-general">En prueba</p>
