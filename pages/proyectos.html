@@ -48,25 +48,79 @@
 <main>
     <h1 class="titulo">Mi primera página web</h1>
     <section class="contenedor-proyectos">
-        <h2 class="texto-general">Mis proyectos</h2>
-        <article class="proyecto-uno">
-            <h3 class="texto-general-angosto">Nombre</h3>
-            <p class="texto-general-bottom">Golf Costa Esmeralda</p>
-            <h3 class="texto-general-angosto">Descripcion</h3>
-            <P class="texto-general-bottom">Trabaje como empleado administrativo</P>
-        </article>
-        <article class="proyecto-dos">
-            <h3 class="texto-general-angosto">Nombre</h3>
-            <p class="texto-general-bottom">Golf Pinamar</p>
-            <h3 class="texto-general-angosto">Descripcion</h3>
-            <P class="texto-general-bottom">trabaje como vendedor</P>
-        </article>
-        <figure class="imagen-proyectos">
-            <figcaption>
-                <img class="proyectos" src="../imagenes/Maletin.webp" alt="Maletin">
-            </figcaption>
-        </figure>
-    </section>
+
+    <h2 class="texto-general">Mis proyectos</h2>
+
+    <!-- ACORDEÓN DE PROYECTOS -->
+    <div class="accordion" id="acordeonProyectos">
+
+        <!-- PROYECTO 1 -->
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#proyectoUno">
+
+                    Golf Costa Esmeralda
+
+                </button>
+            </h2>
+
+            <div id="proyectoUno" class="accordion-collapse collapse show"
+                data-bs-parent="#acordeonProyectos">
+
+                <div class="accordion-body">
+
+                    <h3>Nombre</h3>
+                    <p>Golf Costa Esmeralda</p>
+
+                    <h3>Descripción</h3>
+                    <p>Trabajé como empleado administrativo.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PROYECTO 2 -->
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#proyectoDos">
+
+                    Golf Pinamar
+
+                </button>
+            </h2>
+
+            <div id="proyectoDos" class="accordion-collapse collapse"
+                data-bs-parent="#acordeonProyectos">
+
+                <div class="accordion-body">
+
+                    <h3>Nombre</h3>
+                    <p>Golf Pinamar</p>
+
+                    <h3>Descripción</h3>
+                    <p>Trabajé como vendedor.</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <figure class="imagen-proyectos">
+        <figcaption>
+            <img class="proyectos" src="../imagenes/Maletin.webp" alt="Maletín">
+        </figcaption>
+    </figure>
+
+</section>
 </main>
 
 <footer>

@@ -48,23 +48,69 @@
 <main>
     <h1 class="titulo">Mi primera página web</h1>
     <section class="contenedor-proyectos">
-        <figure class="imagen-proyectos">
-            <figcaption>
-                <img class="preguntas" src="../imagenes/Signo-pregunta.jfif" alt="Maletin">
-            </figcaption>
-        </figure>
-        <h2 class="texto-general">
-            Preguntas frecuentes
-        </h2>
-        <article class="proyecto-uno">
-            <h3 class="texto-general-angosto">¿El golf no es un deporte de viejo? </h3>
-            <p class="texto-general-bottom">El golf es para toda clases de edades.</p>
-        </article>
-        <article class="proyecto-dos">
-            <h3 class="texto-general-angosto">¿Ganas plata jugando al golf?</h3>
-            <p class="texto-general-bottom">Si, se puede llegar a ganar plata</p>
-        </article>
-    </section>
+
+    <figure class="imagen-proyectos">
+        <figcaption>
+            <img class="preguntas" src="../imagenes/Signo-pregunta.jfif" alt="Signo de pregunta">
+        </figcaption>
+    </figure>
+
+    <h2 class="texto-general">
+        Preguntas frecuentes
+    </h2>
+
+    <!-- ACORDEÓN DE PREGUNTAS FRECUENTES -->
+    <div class="accordion" id="acordeonFAQ">
+
+        <!-- PREGUNTA 1 -->
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#preguntaUno">
+
+                    ¿El golf no es un deporte de viejo?
+
+                </button>
+            </h2>
+
+            <div id="preguntaUno" class="accordion-collapse collapse show"
+                data-bs-parent="#acordeonFAQ">
+
+                <div class="accordion-body">
+                    El golf es para todas las clases de edades.
+                </div>
+
+            </div>
+        </div>
+
+        <!-- PREGUNTA 2 -->
+        <div class="accordion-item">
+
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#preguntaDos">
+
+                    ¿Ganás plata jugando al golf?
+
+                </button>
+            </h2>
+
+            <div id="preguntaDos" class="accordion-collapse collapse"
+                data-bs-parent="#acordeonFAQ">
+
+                <div class="accordion-body">
+                    Sí, se puede llegar a ganar plata.
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
 </main>
 
